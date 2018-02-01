@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorParent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllersUI.PatientsController">
+   <children>
+      <TabPane layoutX="8.0" layoutY="6.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Patient Details">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="8.0" layoutY="8.0" prefHeight="371.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutY="8.0" prefHeight="50.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Pane layoutX="272.0" layoutY="1.0" prefHeight="30.0" prefWidth="552.0" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="5.0">
+                                       <children>
+                                          <Label layoutX="177.0" layoutY="6.0" prefHeight="17.0" prefWidth="54.0" text="    Search " />
+                                          <Pane layoutX="412.0" layoutY="4.0" prefHeight="22.0" prefWidth="126.0" style="-fx-background-color: white;" />
+                                          <Button fx:id="addPatient" layoutX="10.0" layoutY="3.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="157.0" text="Add New" />
+                                          <TextField fx:id="searchPatients" layoutX="241.0" layoutY="3.0" prefHeight="25.0" prefWidth="217.0" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="anchorPatientDetails" layoutY="32.0" prefHeight="252.0" prefWidth="600.0" style="-fx-background-color: red;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+                                 <children>
+                                    <TableView fx:id="tblPatients" layoutX="6.0" layoutY="6.0" prefHeight="339.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <columns>
+                                        <TableColumn prefWidth="75.0" text="C1" />
+                                        <TableColumn prefWidth="75.0" text="C2" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

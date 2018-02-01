@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MedScanApp.jnlp">
+  <information>
+    <title>MedScanApp</title>
+    <vendor>YoungGucha</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="MedScanApp.jar" size="575020" download="eager" />
+    <jar href="lib\AbsoluteLayout.jar" size="2847" download="eager" />
+    <jar href="lib\Environment_System.jar" size="402627" download="eager" />
+    <jar href="lib\JTattoo-1.6.11.jar" size="1205099" download="eager" />
+    <jar href="lib\UserManagement.jar" size="316933" download="eager" />
+    <jar href="lib\activation.jar" size="56290" download="eager" />
+    <jar href="lib\aopalliance-alpha1.jar" size="22042" download="eager" />
+    <jar href="lib\beansbinding-1.2.1.jar" size="631281" download="eager" />
+    <jar href="lib\commons-codec-1.10.jar" size="284184" download="eager" />
+    <jar href="lib\commons-collections4-4.1.jar" size="751238" download="eager" />
+    <jar href="lib\commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib\derby.jar" size="2673243" download="eager" />
+    <jar href="lib\dom4j.jar" size="508934" download="eager" />
+    <jar href="lib\dsn.jar" size="18478" download="eager" />
+    <jar href="lib\imap.jar" size="178013" download="eager" />
+    <jar href="lib\itextpdf-5.4.2.jar" size="1924146" download="eager" />
+    <jar href="lib\jandex-2.0.0.Final.jar" size="187752" download="eager" />
+    <jar href="lib\javafx-ui-swing.jar" size="763089" download="eager" />
+    <jar href="lib\jcalendar-1.2.2.jar" size="112356" download="eager" />
+    <jar href="lib\jcalendar-1.4.jar" size="165052" download="eager" />
+    <jar href="lib\jcommon-1.0.21.jar" size="323663" download="eager" />
+    <jar href="lib\jewt.jar" size="2646305" download="eager" />
+    <jar href="lib\jfreechart-1.0.12.jar" size="1368681" download="eager" />
+    <jar href="lib\jfreechart-1.0.17-experimental.jar" size="13787" download="eager" />
+    <jar href="lib\jfreechart-1.0.17-swt.jar" size="79102" download="eager" />
+    <jar href="lib\jfreechart-1.0.17.jar" size="1544449" download="eager" />
+    <jar href="lib\jfreesvg-1.4.jar" size="40201" download="eager" />
+    <jar href="lib\jgoodies-common-1.4.0.jar" size="30826" download="eager" />
+    <jar href="lib\jgoodies-common.jar" size="35412" download="eager" />
+    <jar href="lib\jgoodies-forms.jar" size="116937" download="eager" />
+    <jar href="lib\jgoodies-looks-2.8.0.jar" size="401258" download="eager" />
+    <jar href="lib\jgoodies-uif-lite.jar" size="9511" download="eager" />
+    <jar href="lib\jgoodieslaf.jar" size="351885" download="eager" />
+    <jar href="lib\jh.jar" size="508396" download="eager" />
+    <jar href="lib\json-20090211.jar" size="45944" download="eager" />
+    <jar href="lib\log4j-1.2.17.jar" size="489883" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.18.jar" size="789885" download="eager" />
+    <jar href="lib\poi-3.15.jar" size="2579580" download="eager" />
+    <jar href="lib\poi-ooxml-3.15.jar" size="1338241" download="eager" />
+    <jar href="lib\poi-ooxml-schemas-3.15.jar" size="5859007" download="eager" />
+    <jar href="lib\pop3.jar" size="43991" download="eager" />
+    <jar href="lib\rhino-1.7R3.jar" size="1122370" download="eager" />
+    <jar href="lib\smtp.jar" size="52787" download="eager" />
+    <jar href="lib\swtgraphics2d.jar" size="17333" download="eager" />
+    <jar href="lib\velocity-1.7-dep.jar" size="806736" download="eager" />
+    <jar href="lib\weblaf-complete-1.28.jar" size="5321062" download="eager" />
+    <jar href="lib\xmlbeans-2.6.0.jar" size="2730866" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="MedScanApp" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="medscan.MedScan"  name="MedScanApp" />
+  <update check="always"/>
+</jnlp>

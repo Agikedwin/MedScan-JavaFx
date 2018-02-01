@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllersUI.Patients_RecordController">
+   <children>
+      <TabPane layoutX="58.0" layoutY="27.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+            <Tab text="Services">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="865.0" prefWidth="732.0">
+                     <children>
+                        <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="842.0" prefWidth="704.0" style="-fx-border-color: grey;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+                           <children>
+                              <TitledPane animated="false" layoutX="16.0" layoutY="16.0" prefHeight="375.0" prefWidth="728.0" text="Services" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="254.0" prefWidth="688.0">
+                                       <children>
+                                          <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: grey;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" fx:id="xRayTVWrapper">
+                                             <children>
+                                                <TableView layoutX="28.0" layoutY="14.0" prefHeight="200.0" prefWidth="668.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" fx:id="xRayTV">
+                                                   <columns>
+                                                      <TableColumn prefWidth="75.0" text="C1" />
+                                                      <TableColumn prefWidth="75.0" text="C2" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="32.0" layoutY="210.0" prefHeight="131.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                             <children>
+                                                <Pane layoutX="334.0" layoutY="31.0" AnchorPane.rightAnchor="5.0">
+                                                   <children>
+                                                      <TextField fx:id="totalPrice" layoutX="96.0" />
+                                                      <Button fx:id="saveServices" layoutX="257.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="109.0" text="SUBMIT" />
+                                                      <Label layoutY="4.0" prefHeight="17.0" prefWidth="93.0" text="Total Price SH." />
+                                                   </children>
+                                                </Pane>
+                                                <Button fx:id="addAltrasound" layoutX="106.0" layoutY="29.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" text="+ Altra Sound" />
+                                                <Button fx:id="addctScan" layoutX="250.0" layoutY="29.0" mnemonicParsing="false" text="+ CT Scan" />
+                                                <Button fx:id="addXRayService" layoutX="2.0" layoutY="29.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="+ XRay" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Referrals">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="20.0" layoutY="20.0" style="-fx-border-color: grey;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <TitledPane animated="false" layoutX="14.0" layoutY="14.0" text="Referral Information" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="254.0" prefWidth="688.0">
+                                       <children>
+                                          <AnchorPane fx:id="anchorParent" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: grey;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <TableView fx:id="referralsTV" layoutX="28.0" layoutY="14.0" prefHeight="200.0" prefWidth="668.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <columns>
+                                                    <TableColumn prefWidth="75.0" text="C1" />
+                                                    <TableColumn prefWidth="75.0" text="C2" />
+                                                  </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                          <Button fx:id="addReferrals" layoutX="10.0" layoutY="215.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Add" />
+                                          <Button fx:id="viewReferals" layoutX="114.0" layoutY="215.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="View" />
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </TitledPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="paymentsTab" text="Payments">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="20.0" layoutY="20.0" style="-fx-border-color: grey;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <TitledPane animated="false" layoutX="14.0" layoutY="14.0" text="Payments Information" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="254.0" prefWidth="688.0">
+                                       <children>
+                                          <AnchorPane fx:id="anchorPayments" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: grey;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <TableView fx:id="PaymentsTV" layoutX="28.0" layoutY="14.0" prefHeight="200.0" prefWidth="668.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <columns>
+                                                      <TableColumn prefWidth="75.0" text="C1" />
+                                                      <TableColumn prefWidth="75.0" text="C2" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                          <Button fx:id="savePayments" layoutX="10.0" layoutY="215.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Add" />
+                                          <Button fx:id="viewPayments" layoutX="105.0" layoutY="215.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="View" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="ExaminationReportTab" text="Examination Report">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="20.0" layoutY="20.0" style="-fx-border-color: grey;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <TitledPane animated="false" layoutX="14.0" layoutY="14.0" text="Examination Information" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="254.0" prefWidth="688.0">
+                                       <children>
+                                          <AnchorPane fx:id="anchorExaminationReport" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: grey;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <TableView fx:id="ExaminationReportTV" layoutX="28.0" layoutY="14.0" prefHeight="200.0" prefWidth="668.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <columns>
+                                                      <TableColumn prefWidth="75.0" text="C1" />
+                                                      <TableColumn prefWidth="75.0" text="C2" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                          <Button fx:id="saveExaminationReport" layoutX="10.0" layoutY="215.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Add" />
+                                          <Button fx:id="viewExaminationReport" layoutX="105.0" layoutY="215.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="View" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </TitledPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label fx:id="selectedPatientName" layoutX="552.0" layoutY="6.0" prefHeight="24.0" prefWidth="96.0" text="Patient Name" AnchorPane.leftAnchor="552.0" AnchorPane.rightAnchor="138.0" />
+   </children>
+</AnchorPane>

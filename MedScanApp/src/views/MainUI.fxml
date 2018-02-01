@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="465.0" prefWidth="629.0" stylesheets="@css/JMetroLightTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllersUI.MainUIController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="82.0" prefHeight="383.0" prefWidth="218.0" style="-fx-background-color: #556B2F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="82.0">
+         <children>
+            <VBox prefHeight="310.0" prefWidth="224.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="1.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" mouseTransparent="true" prefHeight="45.0" prefWidth="217.0" style="-fx-background-color: #556B2F; -fx-padding: 5 5 5 5;" text="MENU" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="6.0" layoutY="123.0" prefHeight="3.0" prefWidth="185.0" />
+                  <Accordion prefHeight="256.0" prefWidth="224.0">
+                    <panes>
+                      <TitledPane animated="false" text="PATIENTS">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox prefHeight="90.0" prefWidth="214.0">
+                                       <children>
+                                          <Separator layoutX="6.0" layoutY="123.0" prefHeight="3.0" prefWidth="185.0" />
+                                          <Button fx:id="patient_registration" alignment="CENTER_RIGHT" contentDisplay="RIGHT" graphicTextGap="0.0" layoutX="9.0" layoutY="255.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="217.0" style="-fx-padding: 5 5 5 0;" text="REGISTRATION" textAlignment="RIGHT" />
+                                          <Separator layoutX="6.0" layoutY="297.0" prefHeight="3.0" prefWidth="185.0" />
+                                          <Button fx:id="registered_patients" alignment="CENTER_RIGHT" contentDisplay="RIGHT" graphicTextGap="0.0" layoutY="312.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="220.0" style="-fx-padding: 5 5 5 0;" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" prefHeight="88.0" prefWidth="214.0" text="PURCHASES">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="28.0" prefWidth="212.0">
+                                 <children>
+                                    <Button fx:id="lpoRequisitionbtn" alignment="CENTER_RIGHT" layoutY="2.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="214.0" text="L.P.O  AND REQUISITION" />
+                                 </children></AnchorPane>
+                        </content>
+                      </TitledPane>
+                        <TitledPane animated="false" layoutX="10.0" layoutY="35.0" prefHeight="88.0" prefWidth="214.0" text="EXPENSES">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="28.0" prefWidth="212.0">
+                                 <children>
+                                    <Button fx:id="expenses" alignment="CENTER_RIGHT" layoutY="2.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="214.0" text="INCUR EXPENSE" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" prefHeight="163.0" prefWidth="224.0" text="SETUP">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Button fx:id="services" alignment="CENTER_RIGHT" layoutY="2.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="214.0" text="SERVICES" />
+                                    <Button fx:id="others" alignment="CENTER_RIGHT" layoutY="73.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="214.0" text="OTHERS" />
+                                    <Button fx:id="RefereeDoctors" alignment="CENTER_RIGHT" layoutY="36.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="214.0" text="REFEREE DOCTORS" />
+                                    <Separator layoutX="11.0" layoutY="35.0" prefWidth="200.0" />
+                                    <Separator layoutX="7.0" layoutY="72.0" prefWidth="200.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" prefHeight="250.0" prefWidth="214.0" text="REPORTS">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="65.0" prefWidth="222.0">
+                                 <children>
+                                    <Button fx:id="reportPatients" alignment="CENTER_RIGHT" layoutX="2.0" layoutY="2.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="217.0" text="PATIENTS" />
+                                    <Button fx:id="expensesReport" alignment="CENTER_RIGHT" layoutX="1.0" layoutY="36.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="217.0" text="EXPENSES" />
+                                    <Separator layoutX="11.0" layoutY="35.0" prefHeight="5.0" prefWidth="200.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+      <AnchorPane fx:id="anchorArea" layoutX="221.0" layoutY="82.0" prefHeight="383.0" prefWidth="408.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="221.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="82.0">
+         <children>
+            <ImageView fitHeight="376.0" fitWidth="376.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="0.0" />
+         </children></AnchorPane>
+      <AnchorPane prefHeight="90.0" prefWidth="600.0" style="-fx-background-color: #556B2F;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="14.0" layoutY="126.0" prefHeight="5.0" prefWidth="1000.0" style="-fx-background-color: #FF9500;" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Pane layoutX="866.0" prefHeight="84.0" prefWidth="133.0" style="-fx-border-color: transparent transparent transparent gray;" AnchorPane.rightAnchor="30.0">
+               <children>
+                  <Label fx:id="lblDate" contentDisplay="CENTER" layoutX="18.0" layoutY="14.0" prefHeight="17.0" prefWidth="115.0" style="-fx-text-fill: #FF9500;" text="SAT 20" textFill="WHITE" />
+                  <Label fx:id="lblTime" layoutX="17.0" layoutY="42.0" prefHeight="34.0" prefWidth="117.0" style="-fx-text-fill: #FF9500;" styleClass="lable-time" text="12 : 44 PM" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="16.0" layoutY="41.0" prefHeight="0.0" prefWidth="114.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="129.0" prefHeight="84.0" prefWidth="133.0" style="-fx-border-color: transparent transparent transparent GRAY;" AnchorPane.leftAnchor="129.0">
+               <children>
+                  <Label fx:id="lbl" contentDisplay="CENTER" layoutX="17.0" layoutY="18.0" prefHeight="22.0" prefWidth="116.0" text="USER" textFill="WHITE" />
+                  <Label fx:id="lblUser" contentDisplay="CENTER" layoutX="18.0" layoutY="42.0" prefHeight="36.0" prefWidth="115.0" style="-fx-text-fill: #FF9500;" text="MARK OLOO" textFill="WHITE" />
+                  <Separator layoutX="8.0" layoutY="41.0" prefHeight="0.0" prefWidth="119.0" />
+               </children>
+            </Pane>
+            <Label alignment="CENTER" layoutX="276.0" prefHeight="87.0" prefWidth="512.0" styleClass="lable-logo" text="MedScan Diagnostic MIS" textFill="#fcfcfc" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="218.0">
+               <effect>
+                  <Bloom />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

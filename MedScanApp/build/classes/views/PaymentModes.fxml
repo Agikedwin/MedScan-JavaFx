@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="472.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane prefHeight="207.0" prefWidth="560.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="32.0" prefHeight="25.0" prefWidth="94.0" text="Name" />
+            <ComboBox fx:id="institutionName" layoutX="142.0" layoutY="32.0" prefHeight="25.0" prefWidth="461.0" GridPane.columnIndex="2" />
+            <TextField fx:id="datePaid" layoutX="141.0" layoutY="146.0" prefHeight="25.0" prefWidth="278.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="150.0" prefHeight="17.0" prefWidth="127.0" text="Date" GridPane.rowIndex="2" />
+            <TextField fx:id="policyNo" layoutX="167.0" layoutY="97.0" prefHeight="31.0" prefWidth="280.0" promptText="policy or cheque Number" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label alignment="CENTER_RIGHT" layoutX="8.0" layoutY="88.0" prefHeight="49.0" prefWidth="130.0" text="Number" GridPane.rowIndex="1" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="96.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="16.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="437.0" minWidth="10.0" prefWidth="331.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Pane layoutX="174.0" layoutY="241.0" prefHeight="53.0" prefWidth="278.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <Button fx:id="submit" layoutX="2.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" text="Submit" />
+            <Button fx:id="reset" layoutX="155.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" text="RESET" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

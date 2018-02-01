@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<setting>
+    <server>
+        <class>com.mysql.jdbc.Driver</class>
+        <url>jdbc:mysql</url>
+        <host>localhost</host>
+		<port>3306</port>
+		<database>medscan_database</database>
+        <user>root</user>
+        <password></password>
+		<searchValue>ilike</searchValue>
+    </server>
+   <folders>
+    <config>C:\development\MedScanWorking\Integrator_System\config\</config>
+   </folders>
+   
+   <configfiles>
+   <classes>classes.csv</classes>
+   <streams>streams.csv</streams>
+   </configfiles>
+</setting>
+

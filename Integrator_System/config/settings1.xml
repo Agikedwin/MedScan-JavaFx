@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<setting>
+    <server>
+        <class>org.postgresql.Driver</class>
+        <url>jdbc:postgresql</url>
+        <host>localhost</host>
+		<port>5432</port>
+		<database>piecewisedb</database>
+        <user>postgres</user>
+        <password>admin</password>
+		<searchValue>ilike</searchValue>
+    </server>
+   <folders>
+    <config>F:\DiskImagesOS\Projects\FX applications\PieceWise\config\</config>
+   </folders>
+   
+   <configfiles>
+   <classes>classes.csv</classes>
+   <streams>streams.csv</streams>
+   </configfiles>
+</setting>

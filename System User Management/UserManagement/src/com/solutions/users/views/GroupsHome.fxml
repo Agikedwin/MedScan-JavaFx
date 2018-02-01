@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.solutions.users.controllers.GroupsHomeController">
+   <children>
+      <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="555.0" prefWidth="728.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <TabPane fx:id="tabpane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+               <tabs>
+                  <Tab text="Manage User Groups">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <BorderPane prefHeight="296.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <center>
+                                    <BorderPane fx:id="borderpaneUserGroupsWrapper" prefHeight="241.0" prefWidth="276.0" BorderPane.alignment="CENTER">
+                                       <center>
+                                          <TableView fx:id="groupsTable" prefHeight="472.0" prefWidth="374.0" BorderPane.alignment="CENTER">
+                                             <columns>
+                                                <TableColumn prefWidth="75.0" text="C1" />
+                                                <TableColumn prefWidth="75.0" text="C2" />
+                                             </columns>
+                                          </TableView>
+                                       </center>
+                                       <top>
+                                          <AnchorPane prefHeight="24.0" prefWidth="475.0" style="-fx-background-color: #EBEBEB;" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <TextField layoutX="312.0" layoutY="8.0" AnchorPane.bottomAnchor="4.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="4.0" />
+                                                <Label layoutX="268.0" layoutY="8.0" text="Search" AnchorPane.bottomAnchor="4.0" AnchorPane.rightAnchor="179.0" AnchorPane.topAnchor="4.0" />
+                                             </children>
+                                          </AnchorPane>
+                                       </top>
+                                    </BorderPane>
+                                 </center>
+                                 <right>
+                                    <AnchorPane prefHeight="505.0" prefWidth="383.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Label layoutX="90.0" layoutY="14.0" prefHeight="40.0" prefWidth="170.0" text="Input Data" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="58.0" AnchorPane.topAnchor="14.0">
+                                             <font>
+                                                <Font size="28.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="8.0" layoutY="65.0" prefWidth="200.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="65.0" />
+                                          <GridPane layoutX="41.0" layoutY="97.0" prefHeight="103.0" prefWidth="323.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="90.0">
+                                             <children>
+                                                <Label text="Group Name" />
+                                                <TextField fx:id="txtUserGroupName" GridPane.rowIndex="1" />
+                                                <GridPane GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Button fx:id="saveUserGroup" mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" text="Save" GridPane.columnIndex="1" />
+                                                   </children>
+                                                   <columnConstraints>
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="210.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="161.0" minWidth="10.0" prefWidth="122.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                </GridPane>
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="332.0" minWidth="10.0" prefWidth="321.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="127.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </right>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Manage Group Previleges">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <SplitPane dividerPositions="0.5" layoutX="108.0" layoutY="102.0" prefHeight="586.0" prefWidth="728.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                       <children>
+                                          <BorderPane fx:id="borderpanePossiblePrevWrapper" prefHeight="584.0" prefWidth="364.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <center>
+                                                <TableView fx:id="possibleGroupsTable" prefHeight="472.0" prefWidth="374.0" BorderPane.alignment="CENTER">
+                                                   <columns>
+                                                      <TableColumn prefWidth="75.0" text="C1" />
+                                                      <TableColumn prefWidth="75.0" text="C2" />
+                                                   </columns>
+                                                </TableView>
+                                             </center>
+                                             <right>
+                                                <AnchorPane prefHeight="478.0" prefWidth="120.0" BorderPane.alignment="CENTER">
+                                                   <children>
+                                                      <Button fx:id="buttonAdd" layoutX="4.0" layoutY="145.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Add" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="5.0" />
+                                                      <Button fx:id="buttonRemove" layoutX="5.0" layoutY="214.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Remove" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="5.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </right>
+                                             <top>
+                                                <AnchorPane prefHeight="61.0" prefWidth="360.0" BorderPane.alignment="CENTER">
+                                                   <children>
+                                                      <Label layoutX="14.0" layoutY="22.0" text="Select User Group" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="22.0" />
+                                                      <ComboBox fx:id="cbUserGroup" layoutX="117.0" layoutY="18.0" prefHeight="25.0" prefWidth="231.0" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="117.0" AnchorPane.topAnchor="18.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </top>
+                                          </BorderPane>
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                       <children>
+                                          <BorderPane fx:id="borderpaneAssignedPrevWrapper" layoutX="48.0" layoutY="133.0" prefHeight="538.0" prefWidth="360.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <center>
+                                                <TableView fx:id="groupPrevTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                                  <columns>
+                                                    <TableColumn prefWidth="75.0" text="C1" />
+                                                    <TableColumn prefWidth="75.0" text="C2" />
+                                                  </columns>
+                                                </TableView>
+                                             </center>
+                                             <top>
+                                                <AnchorPane prefHeight="61.0" prefWidth="360.0" BorderPane.alignment="CENTER">
+                                                   <children>
+                                                      <Label layoutX="152.0" layoutY="22.0" text="Group Assigned Previleges" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </top>
+                                          </BorderPane>
+                                       </children>
+                                    </AnchorPane>
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

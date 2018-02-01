@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="563.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllersUI.ExaminationReportController">
+   <children>
+      <Pane layoutX="14.0" layoutY="6.0" prefHeight="411.0" prefWidth="543.0" style="-fx-border-color: grey;" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="6.0">
+         <children>
+            <HBox fx:id="refereeDoctorid" layoutX="14.0" layoutY="32.0" />
+            <HBox layoutX="14.0" layoutY="83.0" />
+            <Button fx:id="addexamination" layoutX="400.0" layoutY="507.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" text="SAVE" />
+            <GridPane layoutX="23.0" layoutY="21.0" prefHeight="191.0" prefWidth="500.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="128.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="359.0" minWidth="10.0" prefWidth="357.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="33.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="17.0" prefWidth="127.0" text="Patient's Name" />
+                  <Label prefHeight="17.0" prefWidth="133.0" text="Referee Doctor" GridPane.rowIndex="1" />
+                  <Label prefHeight="17.0" prefWidth="110.0" text="Exam" GridPane.rowIndex="2" />
+                  <Label prefHeight="17.0" prefWidth="127.0" text="Clinical Information" GridPane.rowIndex="3" />
+                  <Label fx:id="examinationPatientName" prefHeight="24.0" prefWidth="334.0" GridPane.columnIndex="1" />
+                  <Label fx:id="examinationDoctor" prefHeight="27.0" prefWidth="316.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="examinationExamination" prefHeight="50.0" prefWidth="342.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="examinationClinicalInfo" prefHeight="45.0" prefWidth="357.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <GridPane layoutX="40.0" layoutY="265.0" prefHeight="210.0" prefWidth="487.0">
+         <children>
+            <Label layoutX="26.0" layoutY="267.0" prefHeight="17.0" prefWidth="95.0" text="Findings" />
+            <Label layoutX="26.0" layoutY="292.0" prefHeight="17.0" prefWidth="98.0" text="Conclusion" GridPane.rowIndex="2" />
+            <TextArea fx:id="examinationConclusion" prefHeight="112.0" prefWidth="336.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextArea fx:id="examinationFindings" prefHeight="88.0" prefWidth="343.0" GridPane.columnIndex="1" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" prefWidth="133.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="376.0" minWidth="10.0" prefWidth="354.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="111.0" minHeight="10.0" prefHeight="92.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="111.0" minHeight="10.0" prefHeight="11.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="115.0" minHeight="10.0" prefHeight="115.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>

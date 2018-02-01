@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Wed Jan 11 18:33:55 EAT 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.3.0 - (1405108): instance a816c00e-0159-8e2a-03e1-0000061bc668 
+on database directory C:\Users\YoungGucha\AppData\Roaming\NetBeans\java\solutions\pwp  with class loader sun.misc.Launcher$AppClassLoader@7440e464 
+Loaded from file:/C:/development/MedScanWorking/Integrator_System/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_71-b15
+user.dir=C:\development\MedScanWorking\Integrator_System
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="50.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="136.0" layoutY="13.0" AnchorPane.rightAnchor="170.0">
+               <children>
+                  <Label layoutY="4.0" prefHeight="17.0" prefWidth="109.0" text="Search Name" />
+                  <TextField layoutX="109.0" prefHeight="25.0" prefWidth="186.0" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="53.0" layoutY="58.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <TableView layoutX="56.0" layoutY="14.0" prefHeight="300.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="11.0" layoutY="368.0" prefHeight="50.0" prefWidth="600.0" style="-fx-border-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Pane layoutX="174.0" layoutY="13.0" AnchorPane.rightAnchor="170.0">
+               <children>
+                  <Button layoutX="84.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="186.0" text="Remove Selected Service" />
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Cancel" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
